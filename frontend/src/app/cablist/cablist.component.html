@@ -1,0 +1,30 @@
+
+    <div class="row">
+        <div class="col">
+            <input label="location"  class="form-control" type="text" [(ngModel)]="location" placeholder="location"/>
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-primary mb-2" (click)="getCabsByLocation()">Search</button>
+        </div>
+    </div>
+
+<p></p>
+<h2>Available providers</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Rating</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let cab of cabs">
+        <td>{{cab.name}}</td>
+        <td>{{cab.price}}</td>
+        <td>{{cab.rating}}</td>
+    </tr>
+
+    </tbody>
+</table>

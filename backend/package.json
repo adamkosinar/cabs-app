@@ -1,0 +1,55 @@
+{
+  "name": "cabs",
+  "version": "1.0.0",
+  "description": "backend api for cab providers",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "tsc",
+    "eslint": "eslint \"**/*.ts\"",
+    "test": "rimraf dist coverage && npm run eslint  && nyc mocha",
+    "server": "rimraf dist coverage && npm run build &&  node dist/server.js"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/chai": "~3.5.2",
+    "@types/lodash": "^4.14.149",
+    "@types/mocha": "~2.2.41",
+    "@types/node": "^13.1.8",
+    "@types/restify": "^8.4.2",
+    "@types/restify-cors-middleware": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.11.0",
+    "@typescript-eslint/parser": "^2.11.0",
+    "chai": "^3.5.0",
+    "eslint": "^6.6.0",
+    "mocha": "~3.2.0",
+    "nyc": "^15.0.0",
+    "rimraf": "~2.5.2",
+    "source-map-support": "0.5.9",
+    "ts-node": "~3.1.0",
+    "typescript": "^3.7.5"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "exclude": [
+      "**/*.d.ts",
+      "test/**"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "html",
+      "text"
+    ]
+  },
+  "dependencies": {
+    "inversify": "^5.0.1",
+    "lodash": "^4.17.15",
+    "reflect-metadata": "^0.1.13",
+    "restify": "^8.5.1",
+    "restify-cors-middleware": "^1.1.1"
+  }
+}

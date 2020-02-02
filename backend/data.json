@@ -1,0 +1,47 @@
+{
+
+  "London" : [
+      {
+        "name": "Provider A",
+        "price": 15,
+        "rating": 5
+      },
+
+      {
+        "name": "Provider B",
+        "price": 15,
+        "rating": 4.5
+      }
+  ],
+
+  "Glasgow": [
+
+    {
+      "name": "Glasgow A",
+      "price": 15,
+      "rating": 5
+    },
+
+    {
+      "name": "Glasgow B",
+      "price": 15,
+      "rating": 4.5
+    }
+  ],
+
+  "Liverpool" : [
+    {
+      "name": "Liverpool A",
+      "price": 15,
+      "rating": 5
+    },
+
+    {
+      "name": "Liverpool B",
+      "price": 15,
+      "rating": 4.5
+    }
+
+  ]
+
+}
